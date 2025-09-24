@@ -1,51 +1,53 @@
----
 
-# Layer7 DStat
+# PortFlow Monitor
 
-Layer7 DStat is a modern, high-performance distributed system statistics monitoring tool. This project leverages React with Vite and Shadcn for the frontend, and Actix-Web in Rust for the backend to provide real-time insights into your network's performance.
+**PortFlow Monitor** is a modern, real-time web dashboard that visualizes HTTP and HTTPS traffic flowing through specific network ports. Built with a sleek React frontend and a high-performance Rust backend, it provides immediate insights into your network activity with interactive graphs and intuitive metrics.
 
 ## Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+* [Features](#features)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
 
 ## Features
 
-- **Real-time Monitoring**: Get real-time statistics of your distributed system's performance.
-- **Modern Frontend**: Built with React, Vite, and Shadcn for a fast and responsive user interface.
-- **Robust Backend**: Powered by Rust and Actix-Web for high performance and reliability.
-- **Extensible**: Easily extend and customize to fit your specific monitoring needs.
+* **Real-Time Traffic Visualization**: Watch HTTP/HTTPS traffic on specific ports as it happens.
+* **Interactive Graphs**: Modern, responsive charts built with React, Vite, and Shadcn.
+* **High-Performance Backend**: Powered by Rust and Actix-Web for fast, reliable monitoring.
+* **Customizable and Extensible**: Tailor the dashboard to track the metrics that matter most.
 
 ## Installation
 
 ### Prerequisites
 
-Ensure you have the following installed:
-- Node.js (v14 or higher)
-- Rust (latest stable version)
-- Cargo (Rust package manager)
+Make sure you have the following installed:
+
+* Node.js (v14 or higher)
+* Rust (latest stable version)
+* Cargo (Rust package manager)
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/layer7-dstat.git
-cd layer7-dstat
+git clone https://github.com/yourusername/portflow-monitor.git
+cd portflow-monitor
 ```
 
 ### Frontend Setup
-Navigate to the `frontend` directory and install the dependencies:
+
+Navigate to the `frontend` directory and install dependencies:
 
 ```bash
 cd frontend
-pnpm i
+pnpm install
 ```
 
 ### Backend Setup
 
-Navigate to the `root` directory and build the project:
+From the root directory, build the Rust backend:
+
 ```bash
 cd ..
 cargo build
@@ -55,7 +57,7 @@ cargo build
 
 ### Running the Frontend
 
-From the `frontend` directory, start the development server:
+Start the development server from the `frontend` directory:
 
 ```bash
 pnpm dev
@@ -63,17 +65,18 @@ pnpm dev
 
 ### Running the Backend
 
-From the `root` directory, start the backend server:
+Start the backend server from the root directory:
 
 ```bash
 cargo run
 ```
 
-The frontend will be available at `http://localhost:3000` and the backend at `http://localhost:8080`.
+* Frontend: `http://localhost:3000`
+* Backend: `http://localhost:8080`
 
 ## Contributing
 
-We welcome contributions from the community! Please follow these steps to contribute:
+We welcome contributions! Here's how to get started:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
@@ -82,5 +85,6 @@ We welcome contributions from the community! Please follow these steps to contri
 5. Push to the branch (`git push origin feature/your-feature`).
 6. Open a pull request.
 
-Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+Please follow coding standards and include tests for new functionality.
+
 ---

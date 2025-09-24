@@ -31,7 +31,7 @@ Make sure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/portflow-monitor.git
+git clone https://github.com/obfusque/portflow-monitor.git
 cd portflow-monitor
 ```
 
